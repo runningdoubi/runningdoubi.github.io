@@ -1,0 +1,30 @@
+{
+  "name": "wedding-present",
+  "version": "1.0.0",
+  "description": "红包雨canvas版",
+  "main": "index.js",
+  "scripts": {
+    "start":"anywhere",
+    "watch":"livereload",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/runningdoubi/weddingPresent-lastest.git"
+  },
+  "keywords": [
+    "wedding-Present",
+    "红包雨",
+    "canvas"
+  ],
+  "author": "supernever",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/runningdoubi/weddingPresent-lastest/issues"
+  },
+  "homepage": "https://github.com/runningdoubi/weddingPresent-lastest#readme",
+  "devDependencies": {
+    "anywhere": "^1.4.0",
+    "livereload": "^0.7.0"
+  }
+}
