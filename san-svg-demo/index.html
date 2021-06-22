@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title></title>
+    <script>
+        (function (doc, win) {
+            var dummy = doc.createElement('_').style;
+            dummy.width = '1vw';
+            if (dummy.width) {
+               return;
+            }
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) {
+                        return;
+                    }
+                    docEl.style.fontSize = (clientWidth / 20) + 'px';
+                };
+            recalc();
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+    <style>*{margin:0;padding:0;box-sizing:border-box}html{font-size:5vw}</style>
+<link href=/san-svg-demo/static/san-demo/css/index.cfc9c852.css rel=stylesheet></head>
+<body>
+<div id=app></div>
+<script type=text/javascript src=/san-svg-demo/static/san-demo/js/index.cad39b67.js></script></body>
+</html>
